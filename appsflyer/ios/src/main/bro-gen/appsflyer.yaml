@@ -1,0 +1,72 @@
+package: org.robovm.pods.appsflyer
+framework: AppsFlyerLib
+include: [foundation]
+clang_args: ['-x', 'objective-c']
+headers: [AppsFlyerTracker.h]
+
+enums:
+    EmailCryptType: {}
+
+
+classes:
+    AppsFlyerCrossPromotionHelper:
+        methods:
+            '+trackCrossPromoteImpression:campaign:':
+                #trim_after_first_colon: true
+                name: trackCrossPromoteImpression$campaign$
+            '+trackAndOpenStore:campaign:paramters:openStore:':
+                #trim_after_first_colon: true
+                name: trackAndOpenStore$campaign$paramters$openStore$
+    AppsFlyerLinkGenerator:
+        methods:
+            '-addParameterValue:forKey:':
+                #trim_after_first_colon: true
+                name: addParameterValue$forKey$
+    AppsFlyerShareInviteHelper:
+        methods:
+            '+generateInviteUrlWithLinkGenerator:completionHandler:':
+                #trim_after_first_colon: true
+                name: generateInviteUrlWithLinkGenerator$completionHandler$
+            '+trackInvite:parameters:':
+                #trim_after_first_colon: true
+                name: trackInvite$parameters$
+    AppsFlyerTracker:
+        methods:
+            '-setUserEmails:withCryptType:':
+                #trim_after_first_colon: true
+                name: setUserEmails$withCryptType$
+            '-trackEvent:withValue:':
+                #trim_after_first_colon: true
+                name: trackEvent$withValue$
+            '-trackEvent:withValues:':
+                #trim_after_first_colon: true
+                name: trackEvent$withValues$
+            '-validateAndTrackInAppPurchase:price:currency:transactionId:additionalParameters:success:failure:':
+                #trim_after_first_colon: true
+                name: validateAndTrackInAppPurchase$price$currency$transactionId$additionalParameters$success$failure$
+            '-trackLocation:latitude:':
+                #trim_after_first_colon: true
+                name: trackLocation$latitude$
+            '-loadConversionDataWithDelegate:':
+                name: loadConversionDataWithDelegate$
+            '-handleOpenURL:sourceApplication:':
+                #trim_after_first_colon: true
+                name: handleOpenURL$sourceApplication$
+            '-handleOpenURL:sourceApplication:withAnnotation:':
+                #trim_after_first_colon: true
+                name: handleOpenURL$sourceApplication$withAnnotation$
+            '-handleOpenUrl:options:':
+                #trim_after_first_colon: true
+                name: handleOpenUrl$options$
+            '-continueUserActivity:restorationHandler:':
+                #trim_after_first_colon: true
+                name: continueUserActivity$restorationHandler$
+            '-remoteDebuggingCallWithData:':
+                name: remoteDebuggingCallWithData$
+            '-setHost:withHostPrefix:':
+                #trim_after_first_colon: true
+                name: setHost$withHostPrefix$
+
+
+protocols:
+    AppsFlyerTrackerDelegate: {}
