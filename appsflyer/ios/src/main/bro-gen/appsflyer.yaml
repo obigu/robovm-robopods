@@ -13,59 +13,59 @@ classes:
         methods:
             '+trackCrossPromoteImpression:campaign:':
                 #trim_after_first_colon: true
-                name: trackCrossPromoteImpression$campaign$
+                name: trackCrossPromoteImpression
             '+trackAndOpenStore:campaign:paramters:openStore:':
                 #trim_after_first_colon: true
-                name: trackAndOpenStore$campaign$paramters$openStore$
+                name: trackAndOpenStore
     AppsFlyerLinkGenerator:
         methods:
             '-addParameterValue:forKey:':
                 #trim_after_first_colon: true
-                name: addParameterValue$forKey$
+                name: addParameterValue
     AppsFlyerShareInviteHelper:
         methods:
             '+generateInviteUrlWithLinkGenerator:completionHandler:':
                 #trim_after_first_colon: true
-                name: generateInviteUrlWithLinkGenerator$completionHandler$
+                name: generateInviteUrl
             '+trackInvite:parameters:':
                 #trim_after_first_colon: true
-                name: trackInvite$parameters$
+                name: trackInvite
     AppsFlyerTracker:
         methods:
             '-setUserEmails:withCryptType:':
                 #trim_after_first_colon: true
-                name: setUserEmails$withCryptType$
+                name: setUserEmails
             '-trackEvent:withValue:':
                 #trim_after_first_colon: true
-                name: trackEvent$withValue$
+                name: trackEvent
             '-trackEvent:withValues:':
                 #trim_after_first_colon: true
-                name: trackEvent$withValues$
+                name: trackEvent
             '-validateAndTrackInAppPurchase:price:currency:transactionId:additionalParameters:success:failure:':
                 #trim_after_first_colon: true
-                name: validateAndTrackInAppPurchase$price$currency$transactionId$additionalParameters$success$failure$
+                name: validateAndTrackInAppPurchase
             '-trackLocation:latitude:':
                 #trim_after_first_colon: true
-                name: trackLocation$latitude$
+                name: trackLocation
             '-loadConversionDataWithDelegate:':
-                name: loadConversionDataWithDelegate$
+                name: loadConversionData
             '-handleOpenURL:sourceApplication:':
                 #trim_after_first_colon: true
-                name: handleOpenURL$sourceApplication$
+                name: handleOpenURL
             '-handleOpenURL:sourceApplication:withAnnotation:':
                 #trim_after_first_colon: true
-                name: handleOpenURL$sourceApplication$withAnnotation$
+                name: handleOpenURL
             '-handleOpenUrl:options:':
                 #trim_after_first_colon: true
-                name: handleOpenUrl$options$
+                name: handleOpenUrl
             '-continueUserActivity:restorationHandler:':
                 #trim_after_first_colon: true
-                name: continueUserActivity$restorationHandler$
+                name: continueUserActivity
             '-remoteDebuggingCallWithData:':
-                name: remoteDebuggingCallWithData$
+                name: remoteDebuggingCall
             '-setHost:withHostPrefix:':
                 #trim_after_first_colon: true
-                name: setHost$withHostPrefix$
+                name: setHost
 
 
 protocols:

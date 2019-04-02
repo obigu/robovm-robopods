@@ -70,7 +70,7 @@ import org.robovm.apple.foundation.*;
     @Method(selector = "setBaseDeeplink:")
     public native void setBaseDeeplink(String baseDeeplink);
     @Method(selector = "addParameterValue:forKey:")
-    public native void addParameterValue$forKey$(String value, String key);
+    public native void addParameterValue(String value, String key);
     @Method(selector = "addParameters:")
     public native void addParameters(NSDictionary<?, ?> parameters);
     /*</methods>*/

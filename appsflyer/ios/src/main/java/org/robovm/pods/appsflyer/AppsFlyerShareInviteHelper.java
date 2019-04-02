@@ -52,8 +52,8 @@ import org.robovm.apple.foundation.*;
     /*<members>*//*</members>*/
     /*<methods>*/
     @Method(selector = "generateInviteUrlWithLinkGenerator:completionHandler:")
-    public static native void generateInviteUrlWithLinkGenerator$completionHandler$(@Block Block1<AppsFlyerLinkGenerator, AppsFlyerLinkGenerator> generatorCreator, @Block VoidBlock1<NSURL> completionHandler);
+    public static native void generateInviteUrl(@Block Block1<AppsFlyerLinkGenerator, AppsFlyerLinkGenerator> generatorCreator, @Block VoidBlock1<NSURL> completionHandler);
     @Method(selector = "trackInvite:parameters:")
-    public static native void trackInvite$parameters$(String channel, NSDictionary<?, ?> parameters);
+    public static native void trackInvite(String channel, NSDictionary<?, ?> parameters);
     /*</methods>*/
 }

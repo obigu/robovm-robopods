@@ -52,8 +52,8 @@ import org.robovm.apple.foundation.*;
     /*<members>*//*</members>*/
     /*<methods>*/
     @Method(selector = "trackCrossPromoteImpression:campaign:")
-    public static native void trackCrossPromoteImpression$campaign$(String appID, String campaign);
+    public static native void trackCrossPromoteImpression(String appID, String campaign);
     @Method(selector = "trackAndOpenStore:campaign:paramters:openStore:")
-    public static native void trackAndOpenStore$campaign$paramters$openStore$(String appID, String campaign, NSDictionary<?, ?> parameters, @Block VoidBlock2<NSURLSession, NSURL> openStoreBlock);
+    public static native void trackAndOpenStore(String appID, String campaign, NSDictionary<?, ?> parameters, @Block VoidBlock2<NSURLSession, NSURL> openStoreBlock);
     /*</methods>*/
 }

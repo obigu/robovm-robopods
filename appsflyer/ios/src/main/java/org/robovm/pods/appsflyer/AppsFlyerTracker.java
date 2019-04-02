@@ -129,35 +129,35 @@ import org.robovm.apple.foundation.*;
     /*<members>*//*</members>*/
     /*<methods>*/
     @Method(selector = "setUserEmails:withCryptType:")
-    public native void setUserEmails$withCryptType$(NSArray<?> userEmails, EmailCryptType type);
+    public native void setUserEmails(NSArray<?> userEmails, EmailCryptType type);
     @Method(selector = "trackAppLaunch")
     public native void trackAppLaunch();
     @Method(selector = "trackEvent:withValue:")
-    public native void trackEvent$withValue$(String eventName, String value);
+    public native void trackEvent(String eventName, String value);
     @Method(selector = "trackEvent:withValues:")
-    public native void trackEvent$withValues$(String eventName, NSDictionary<?, ?> values);
+    public native void trackEvent(String eventName, NSDictionary<?, ?> values);
     /**
      * @since Available in iOS 7.0 and later.
      */
     @Method(selector = "validateAndTrackInAppPurchase:price:currency:transactionId:additionalParameters:success:failure:")
-    public native void validateAndTrackInAppPurchase$price$currency$transactionId$additionalParameters$success$failure$(String productIdentifier, String price, String currency, String tranactionId, NSDictionary<?, ?> params, @Block VoidBlock1<NSDictionary<?, ?>> successBlock, @Block VoidBlock2<NSError, NSObject> failedBlock);
+    public native void validateAndTrackInAppPurchase(String productIdentifier, String price, String currency, String tranactionId, NSDictionary<?, ?> params, @Block VoidBlock1<NSDictionary<?, ?>> successBlock, @Block VoidBlock2<NSError, NSObject> failedBlock);
     @Method(selector = "trackLocation:latitude:")
-    public native void trackLocation$latitude$(double longitude, double latitude);
+    public native void trackLocation(double longitude, double latitude);
     @Method(selector = "getAppsFlyerUID")
     public native String getAppsFlyerUID();
     @Method(selector = "loadConversionDataWithDelegate:")
-    public native void loadConversionDataWithDelegate$(AppsFlyerTrackerDelegate delegate);
+    public native void loadConversionData(AppsFlyerTrackerDelegate delegate);
     @Method(selector = "handleOpenURL:sourceApplication:")
-    public native void handleOpenURL$sourceApplication$(NSURL url, String sourceApplication);
+    public native void handleOpenURL(NSURL url, String sourceApplication);
     @Method(selector = "handleOpenURL:sourceApplication:withAnnotation:")
-    public native void handleOpenURL$sourceApplication$withAnnotation$(NSURL url, String sourceApplication, NSObject annotation);
+    public native void handleOpenURL(NSURL url, String sourceApplication, NSObject annotation);
     @Method(selector = "handleOpenUrl:options:")
-    public native void handleOpenUrl$options$(NSURL url, NSDictionary<?, ?> options);
+    public native void handleOpenUrl(NSURL url, NSDictionary<?, ?> options);
     /**
      * @since Available in iOS 9.0 and later.
      */
     @Method(selector = "continueUserActivity:restorationHandler:")
-    public native boolean continueUserActivity$restorationHandler$(NSUserActivity userActivity, @Block VoidBlock1<NSArray<?>> restorationHandler);
+    public native boolean continueUserActivity(NSUserActivity userActivity, @Block VoidBlock1<NSArray<?>> restorationHandler);
     /**
      * @since Available in iOS 9.0 and later.
      */
@@ -170,9 +170,9 @@ import org.robovm.apple.foundation.*;
     @Method(selector = "getSDKVersion")
     public native String getSDKVersion();
     @Method(selector = "remoteDebuggingCallWithData:")
-    public native void remoteDebuggingCallWithData$(String data);
+    public native void remoteDebuggingCall(String data);
     @Method(selector = "setHost:withHostPrefix:")
-    public native void setHost$withHostPrefix$(String host, String hostPrefix);
+    public native void setHost(String host, String hostPrefix);
     @Method(selector = "sharedTracker")
     public static native AppsFlyerTracker sharedTracker();
     /*</methods>*/
