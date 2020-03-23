@@ -5,7 +5,7 @@
 ### 3rd party native framework
 This RoboPod requires you to download and add the native 3rd party framework manually:
 
-1. Download the SDK for iOS from https://www.appodeal.com/sdk
+1. Download the SDK for iOS from https://support.appsflyer.com/hc/en-us/articles/207032066-iOS-SDK-integration-for-developers#introduction
 2. Put the `AppsFlyerLib.framework` folder in your iOS project's `libs/` folder
 3. Add the following to your `robovm.xml`
 
@@ -15,6 +15,10 @@ This RoboPod requires you to download and add the native 3rd party framework man
     <frameworkPaths>
         <path>libs</path>
     </frameworkPaths>
+    ...
+    <frameworks>
+        <framework>AppsFlyerLib</framework>
+    </frameworks>
 </config>
 ```
 
